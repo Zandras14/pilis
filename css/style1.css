@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,9 +11,43 @@ html{
 }
 body{
     background: url('../img/bg.png') repeat-x #629d66;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     background-color: white;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 900px;
+}
+.sidebar{
+    width: 20%;
+    float: left;
+}
+.sidebar ul{
+    background: url('../img/img02.gif');
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block
+}
+.sidebar ul li a:hover{
+    color: white;
+}
+.content{
+    width: 80%;
+    float: right;
+}
+.header{
+    background: url('../img/logo1.jpg');
+    
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
 }
